@@ -5,8 +5,11 @@ from rest_framework.permissions import IsAuthenticated
 from .models import Menu, Booking, User 
 from .serializers import MenuSerializer, BookingSerializer, UserSerializer
 
+# Home page
+def index(request):
+    return render(request, 'index.html')
 
-# Create your views here.
+# Menu and Booking
 class MenuItemView(ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer 
