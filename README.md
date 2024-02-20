@@ -1,8 +1,11 @@
 Endpoints for menu, single menu items, bookings and table information, user registrations: 
 
 /restaurant/menu 
+
 /restaurant/menu/<int:pk>
+
 /restaurant/booking/tables (requires authentication)
+
 /auth/users (requires authentication)
 
 Create an SQL database and change the name in the settings.py file to whatever you name the database. Default database name I've set is 
