@@ -8,7 +8,6 @@ router = DefaultRouter()
 # Using a router.registers route, the first argument would be part of the url path, then you would just include the "router" as a variable and use the urls property on it 
 router.register(r'tables', restaurant_views.BookingViewSet)
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('restaurant/', include('restaurant.urls')),
