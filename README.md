@@ -1,4 +1,6 @@
-Endpoints for menu, single menu items, bookings and table information, user registrations: 
+Endpoints for homepage, menu, single menu items, bookings and table information, user registrations: 
+
+/restaurant
 
 /restaurant/menu 
 
@@ -7,6 +9,8 @@ Endpoints for menu, single menu items, bookings and table information, user regi
 /restaurant/booking/tables (requires authentication)
 
 /auth/users (requires authentication)
+
+/auth/token/login (Request a token)
 
 Create an SQL database and change the name in the settings.py file to whatever you name the database. Default database name I've set is 
 "littlelemon2". 
